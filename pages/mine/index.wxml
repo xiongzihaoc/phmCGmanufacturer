@@ -1,0 +1,28 @@
+<view class="box">
+	<!-- 头像名字 -->
+	<view class="myMessage">
+		<view class="userNameBox">
+			<view>
+				<image src="{{headerUrl==''?'/images/cgcj.jpg':headerUrl}}"></image>
+			</view>
+			<view style="margin-left:20rpx" wx:if="{{isLogin}}">
+				<text class="fontWeight" style="display:inline-block;margin-bottom:20rpx;font-size:36rpx;">{{userName}}</text>
+				<!-- <view>
+					<text class="fontWeight" style="font-size:24rpx">浙江</text>
+					<text class="fontWeight" style="font-size:24rpx;margin-left:10rpx">杭州</text>
+				</view> -->
+			</view>
+			<view style="margin-left:20rpx" wx:else bindtap="login">
+				<text class="fontWeight" style="display:inline-block;margin-bottom:20rpx;font-size:36rpx;">请登录</text>
+			</view>
+		</view>
+	</view>
+	<!-- 个人信息  二维码 -->
+	<view class="title" bindtap="bindJumpUserInfo">
+		<view class="userinfo">
+			<image src="/images/paitent.png"></image>
+			<text class="content">厂家信息</text>
+		</view>
+		<image src="/images/Rjt_ccc.png"></image>
+	</view>
+</view>

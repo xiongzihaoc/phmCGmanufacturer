@@ -1,0 +1,323 @@
+.weui-search-bar {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.weui-search-bar__form {
+  border-radius: 40rpx !important;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 40rpx;
+  top: 5rpx;
+}
+
+.weui-search-bar__input {
+  padding-left: 40rpx;
+}
+
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  padding: 14rpx 0;
+  background: #F5F5F5;
+  border: 1px solid #E6E6EA;
+}
+
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 56rpx;
+  line-height: 56rpx;
+}
+
+.noBingDoctorbox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30rpx;
+  color: #1B1200;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 30rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a8a8a8;
+  z-index: 999;
+}
+
+.popup_box {
+  background: white;
+  width: 100%;
+  height: 600rpx;
+}
+
+.popup_header {
+  padding: 24rpx 50rpx 0 50rpx;
+  margin-top: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+
+.popup_header .clear {
+  color: #1B1200;
+}
+
+.popup_header .done {
+  color: #1ADCA9;
+}
+
+.popup_type_title {
+  display: flex;
+  margin-top: 26rpx;
+  padding: 22rpx 150rpx 22rpx 150rpx;
+  justify-content: space-between;
+  border-top: solid 1px #F1F1F1;
+  border-bottom: solid 1px #F1F1F1;
+  color: #A8A8A8;
+  font-size: 32rpx;
+}
+
+.active {
+  color: #000000;
+  font-weight: 700;
+}
+
+.popup_type_pick {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commonSty {
+  display: inline-block;
+  margin: 20rpx 20rpx 20rpx 0;
+}
+
+.kong {
+  margin-top: 300rpx;
+  text-align: center;
+}
+
+.iconkong {
+  font-size: 64rpx;
+  color: #a8a8a8;
+}
+
+/* 日期选择 */
+.picker_group {
+  height: 85rpx;
+  line-height: 85rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #888;
+  /* border-bottom: 1rpx solid #efefef; */
+
+}
+
+.picker_group picker {
+  /* background-color: yellow; */
+  color: #1ADCA9;
+  height: 55rpx;
+  line-height: 55rpx;
+  margin: 0 2%;
+  padding: 0 5%;
+  border: 1rpx solid #1ADCA9;
+  border-radius: 30rpx;
+}
+
+.title_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+
+.title_box .title {
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.choose_box {
+  display: flex;
+  align-items: center;
+}
+
+.choose {
+  font-size: 26rpx;
+  font-weight: 700;
+}
+
+.iconR {
+  font-size: 40rpx;
+}
+
+.time {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  font-weight: 700;
+}
+
+.hosInfo {
+  position: relative;
+  display: flex;
+  margin-top: 20rpx;
+  padding: 20rpx 30rpx;
+  border-radius: 30rpx;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.hosLogo {
+  display: flex;
+  align-items: center;
+}
+
+.hosLogo image {
+  width: 96rpx;
+  height: 96rpx;
+}
+
+.hosInfoRight_box {
+  font-size: 30rpx;
+  font-weight: 700;
+  padding-left: 20rpx;
+}
+
+.hosInfoRight_box view {
+  margin: 20rpx 0;
+}
+
+.hosName {
+  font-weight: 400;
+}
+
+.hospitalNameColor {
+  color: #FDBD2F;
+}
+
+.reply {
+  position: absolute;
+  right: 30rpx;
+  bottom: 30rpx;
+  padding: 5rpx 20rpx;
+  font-size: 24rpx;
+  font-weight: 700;
+  border-radius: 60rpx;
+  border: 1px solid #1ADCA9;
+  color: #1ADCA9;
+}
+
+.examine {
+  position: absolute;
+  right: 30rpx;
+  bottom: 30rpx;
+  padding: 5rpx 20rpx;
+  font-size: 24rpx;
+  font-weight: 700;
+  border-radius: 60rpx;
+  border: 1px solid #a8a8a8;
+  color: #a8a8a8;
+}
+
+.screen_box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  width: 100%;
+  height: 900rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.recoilState_box {
+  padding-bottom: 30rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.recoilState_box_instrument {
+  border-bottom: 0;
+}
+
+.recoilState {
+  margin: 30rpx 0;
+  font-weight: 700;
+}
+
+.recoilState_ {
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+  font-size: 28rpx;
+}
+
+.recoilState_con {
+  display: inline-block;
+  padding: 20rpx 30rpx;
+  border-radius: 40rpx;
+  box-sizing: border-box;
+  color: #a8a8a8;
+  border: 1px solid #F2F2F2;
+  background-color: #F2F2F2;
+}
+
+.recoilState_choose {
+  display: inline-block;
+  padding: 20rpx 30rpx;
+  border-radius: 40rpx;
+  box-sizing: border-box;
+  border: 1px solid orange;
+  color: orange;
+  background-color: #fff;
+}
+
+.hospitalName {
+  font-weight: 700;
+  font-size: 28rpx;
+}
+
+.btnScreen {
+  margin: 0 auto;
+  padding: 20rpx;
+  width: 80%;
+  text-align: center;
+  border-radius: 40rpx;
+  color: #fff;
+  z-index: 999;
+  background-color: #1ADCA9;
+}
+
+.hos_style {
+  display: inline-block;
+  margin: 20rpx 20rpx 20rpx 0;
+}
+
+/* 滚动条设置透明 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

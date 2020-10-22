@@ -1,0 +1,14 @@
+<view class="box">
+	<view class="infoList">
+		<text class="fontWeight">姓名</text>
+		<text class="Valcolor">{{name}}</text>
+	</view>
+	<view class="infoList">
+		<text class="fontWeight">联系电话</text>
+		<text class="Valcolor">{{phone}}</text>
+	</view>
+	<view class="infoList">
+		<text class="fontWeight">合作医院</text>
+		<text class="Valcolor hospitalname">{{hospital}}</text>
+	</view>
+</view>

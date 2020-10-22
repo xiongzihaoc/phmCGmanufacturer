@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/patient/index",
+    "pages/Authorization/index",
+    "pages/mine/index",
+    "pages/mine/userInfo/userInfo",
+    "pages/logs/logs",
+    "pages/bindNum/bindNum",
+    "pages/hosDetail/hosDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "医生端",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#1ADCA9",
+    "list": [
+      {
+        "pagePath": "pages/patient/index",
+        "text": "反馈",
+        "iconPath": "./images/message.png",
+        "selectedIconPath": "./images/message_is.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "./images/mine.png",
+        "selectedIconPath": "./images/mine_is.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "l-button": "/miniprogram_npm/lin-ui/button/index",
+    "l-input": "/miniprogram_npm/lin-ui/input/index"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

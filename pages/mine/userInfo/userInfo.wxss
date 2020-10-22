@@ -1,0 +1,28 @@
+.box {
+  background-color: #fff;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.infoList {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+
+.fontWeight {
+  font-weight: 700;
+}
+
+.Valcolor {
+  color: #a8a8a8;
+}
+.hospitalname{
+  text-align:right;
+  display:inline-block;
+  width:500rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap
+}

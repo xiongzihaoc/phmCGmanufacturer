@@ -1,0 +1,108 @@
+<view class="box">
+	<!-- 基本信息 -->
+	<view class="basicInformation_box">
+		<view class="basicInformation_title">
+			<text>基本信息</text>
+		</view>
+		<view class="hosInfo basicInformation_main">
+			<view class="hosLogo">
+				<image src="/images/finish_is.png"></image>
+			</view>
+			<view class="hosInfoRight_box">
+				<view>
+					<text class="hosName">医院：</text>
+					<text class="hospitalNameColor">{{hospital}}</text>
+				</view>
+				<view>
+					<text class="hosName">器械：</text>
+					<text>{{goodsName}}</text>
+				</view>
+				<view>
+					<text class="hosName">反馈人：</text>
+					<text wx:if="{{feedbackMan == 0}}">医生</text>
+					<text wx:elif="{{feedbackMan == 1}}">患者</text>
+					<text wx:else>其他</text>
+				</view>
+				<view>
+					<text class="hosName">反馈时间：</text>
+					<text>{{createTime}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 反馈内容 -->
+	<view style="margin-top:20rpx;">
+		<view class="basicInformation_title">
+			<text>反馈内容</text>
+		</view>
+		<view class="feedbackContent">
+			<!-- 反馈文字 -->
+			<view class="feedbackWord">
+				{{content}}
+			</view>
+			<!-- 反馈图片 -->
+			<block wx:if="{{feedList.length > 0}}">
+				<view class="feedbackImage">
+					<block wx:for="{{feedList}}" wx:key="index">
+						<view class="replayImg">
+							<image src="{{item.photoUrl}}" data-url="{{item.photoUrl}}" bindtap="preViewImg"></image>
+						</view>
+					</block>
+				</view>
+			</block>
+		</view>
+	</view>
+	<!-- 已回复查看回复 -->
+	<view class="basicInformation_box" wx:if="{{state == 1}}">
+		<view class="basicInformation_title" style="margin-top:20rpx">
+			<text>回复</text>
+		</view>
+		<view class="replay_box">
+			<!-- 回复文字 -->
+			<view style="word-break:break-all">
+				{{replyContent}}
+			</view>
+			<!-- 回复图片 -->
+			<view class=" uploadImg feedbackImage" wx:if="{{replyPhotos.length > 0}}">
+				<block wx:for="{{replyPhotos}}" wx:key="index">
+					<view class="replayImg">
+						<image src="{{item.photoUrl}}" data-url="{{item.photoUrl}}" bindtap="preViewImg"></image>
+					</view>
+				</block>
+			</view>
+		</view>
+	</view>
+	<!-- 未回复编辑回复 -->
+	<view wx:else class="basicInformation_box">
+		<view class="basicInformation_title" style="margin-top:20rpx">
+			<text>回复</text>
+		</view>
+		<view class="replay_box">
+			<!-- 回复文字 -->
+			<view style="margin: 0 0 20rpx 0">
+				<textarea auto-height value="{{message}}" placeholder="点击回复" bindinput="bindEdit"></textarea>
+			</view>
+			<!-- 回复图片 -->
+			<view class='picVideoList'>
+				<view class='picItem' wx:for="{{tempData}}" wx:for-item="temp" wx:key="url">
+					<image src='{{temp["url"]}}' mode='aspectFill'></image>
+					<view class='LoadBox' wx:if="{{setState==0}}">
+						<text>{{temp["progress"]}}%</text>
+						<view class='loading'>
+							<view class='loadingColor' style='width:{{temp["progress"]}}%'></view>
+						</view>
+					</view>
+					<image class='delPic' wx:if="{{setState==1}}" data-index='{{index}}' catchtap='delPic'
+						src='/images/icon_picDel.png'></image>
+				</view>
+				<view class='picItem' bindtap='uploadPic' wx:if="{{picNum<9}}">
+					<image src='/images/uploadPic.png'></image>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 回复按钮 -->
+	<view wx:if="{{state != 1}}" class="replyBtn" bindtap="replyBtn">
+		<text>回复</text>
+	</view>
+</view>

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "loadmore": "/miniprogram_npm/lin-ui/loadmore/index",
+    "l-album": "/miniprogram_npm/lin-ui/album/index",
+    "l-popup": "/miniprogram_npm/lin-ui/popup/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+  },
+  "navigationBarTitleText": "反馈"
+}

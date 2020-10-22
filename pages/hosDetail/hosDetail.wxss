@@ -1,0 +1,177 @@
+@import '../patient/index.wxss';
+
+.box {
+  padding: 30rpx;
+}
+
+.basicInformation_title {
+  font-weight: 700;
+}
+
+.feedbackContent {
+  min-height:260rpx;
+  margin-top: 20rpx;
+  padding: 20rpx 30rpx;
+  border-radius: 30rpx;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.feedbackWord {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.feedbackImage {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 20rpx;
+}
+
+/* .uploadReplayImg */
+.feedbackImage image {
+  display: inline-block;
+  width: 25%;
+  height: 157rpx;
+  padding: 10rpx;
+  /* margin: 0 10rpx 20rpx 0; */
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+
+.replay_box {
+  min-height:260rpx;
+  margin-top: 20rpx;
+  padding: 20rpx 30rpx;
+  border-radius: 30rpx;
+  background-color: #F2F2F2;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.uploadImg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.replyBtn {
+  width: 90%;
+  padding: 20rpx 0;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 40rpx;
+  text-align: center;
+  background-color: #1ADCA9;
+}
+
+.uploadIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 155rpx;
+  height: 147rpx;
+  border-radius: 30rpx;
+  box-sizing: border-box;
+  color: #D3D3D3
+}
+.closeImageIcon {
+  position: absolute;
+  right: 5rpx;
+  top: 5rpx;
+  font-size: 32rpx;
+  color: red;
+}
+.replayImg {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 157rpx;
+  padding: 10rpx;
+  /* margin: 0 10rpx 20rpx 0; */
+  box-sizing: border-box;
+}
+
+.replayImg image {
+  border-radius: 30rpx;
+  width: 100%;
+  height: 100%;
+}
+
+.picVideoList{
+  margin-top: 28rpx;
+  padding:32rpx 48rpx 32rpx 48rpx;
+  background: #fff;
+  box-shadow: 0px 12rpx 16rpx 0px rgba(121,121,121,0.2);
+  overflow: hidden;
+  border-radius: 20rpx;
+}
+.picItem{
+  width: 120rpx;
+  height: 120rpx;
+  float: left;
+  margin-right: 8rpx;
+  margin-bottom: 8rpx;
+  position: relative;
+  border-radius: 20rpx;
+}
+.playBtn{
+  width: 102rpx !important;
+  height: 102rpx !important;
+  display: block !important;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-top:-51rpx;
+  margin-left:-51rpx;
+}
+.delPic{
+  display: block;
+  position: absolute;
+  top:0rpx;
+  right:0rpx;
+  width: 34rpx !important;
+  height: 34rpx !important;
+}
+.LoadBox{
+  width: 100%;
+  height: 100%;
+  border-radius: 4rpx;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top:0rpx;
+  left:0rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.LoadBox text{
+  font-size:20rpx;
+  color: #f6ae23; 
+}
+.loading{
+  width:80%;
+  height: 8rpx;
+  background:#c7c7cb;
+  border-radius:4rpx;
+  overflow: hidden;
+}
+.loadingColor{
+  width: 100%;
+  height: 100%;
+  border-radius: 3rpx;
+  background: #f6ae23;
+}
+.picItem image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 4rpx;
+}
+.picItem:nth-child(3n){
+  margin-right: 0rpx;
+}
